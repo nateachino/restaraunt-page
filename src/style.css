@@ -5,12 +5,17 @@
     font-style: normal;
 }
 
+@font-face{
+    font-family: 'Numberlin';
+    src: url(./Numberlin.ttf)
+}
+
 body{
     margin: 0;
     padding: 0;
 }
 
-img{
+.img-wrapper>img{
     width: 500px;
     height: 500px;
     border-radius: 50%;
@@ -26,23 +31,43 @@ header{
     height: 50px;
 }
 
+h1{
+    font-weight: bolder;
+    font-family: 'Figerona';
+    font-size: 2rem;
+}
+
 header>div{
     display: flex;
-    justify-content: flex-start;
-    text-align: center;
     height: 100%;
     align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+
+.left-header{
+    padding: 16px;
+    gap: 16px
+}
+
+.right-header{
+    padding: 16px;
 }
 
 .main{
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     min-height: 100vh;
-    gap: 32px
+    height: 200vh;
+    gap: 32px;
+    background-image: url(./skyline.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .img-wrapper{
@@ -57,4 +82,7 @@ header>div{
     font-weight: bold;
     font-size: 50px;
     text-align: left;
+}
+
+.left-text{
 }
