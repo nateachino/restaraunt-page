@@ -74,13 +74,14 @@ footer{
     align-items: center;
     text-align: center;
     min-height: 100vh;
-    height: 200vh;
+    height: 150vh;
     gap: 32px;
 }
 
 a{
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 
 a:hover{
