@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/header.js":
+/***/ "./src/footer.js":
 /*!***********************!*\
-  !*** ./src/header.js ***!
+  !*** ./src/footer.js ***!
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createHeader\": () => (/* binding */ createHeader)\n/* harmony export */ });\nconst mainContent = document.getElementById(\"content\")\r\n\r\nfunction createHeader(){\r\n\r\n    const header = document.createElement(\"header\")\r\n    const headerHolder = document.createElement(\"div\")\r\n    const leftHeader = document.createElement(\"div\")\r\n\r\n    const home = document.createElement(\"a\")\r\n    const menu = document.createElement(\"a\")\r\n    const about = document.createElement(\"a\")\r\n\r\n    home.innerHTML = \"Home\"\r\n    menu.innerHTML = \"Menu\"\r\n    about.innerHTML = \"About\"\r\n\r\n    leftHeader.classList.add(\"left-header\")\r\n\r\n    leftHeader.appendChild(home)\r\n    leftHeader.appendChild(menu)\r\n    leftHeader.appendChild(about)\r\n\r\n    headerHolder.appendChild(leftHeader)\r\n    header.appendChild(headerHolder)\r\n\r\n    mainContent.appendChild(header)\r\n\r\n}\r\n\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/header.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createFooter\": () => (/* binding */ createFooter)\n/* harmony export */ });\nconst mainContent = document.getElementById(\"content\")\r\n\r\nfunction createFooter(){\r\n    const footer = document.createElement(\"footer\")\r\n    const gitHubLink = document.createElement(\"a\")\r\n    const gitHubIcon = document.createElement('img')\r\n\r\n    gitHubLink.target = \"_blank\"\r\n    gitHubLink.href = \"https://github.com/nateachino\"\r\n    gitHubLink.innerHTML = \"github.com/nateachino\"\r\n\r\n    gitHubIcon.src = \"/src/GitHub-Mark-32px.png\"\r\n\r\n\r\n    footer.append(gitHubLink, gitHubIcon)\r\n    mainContent.append(footer)\r\n}\n\n//# sourceURL=webpack://restaurant-page/./src/footer.js?");
+
+/***/ }),
+
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createHomeContent\": () => (/* binding */ createHomeContent)\n/* harmony export */ });\nconst mainContent = document.getElementById(\"content\")\r\n\r\nfunction createHomeContent(){\r\n    const mainDiv = document.createElement(\"div\")\r\n    const imgWrapper = document.createElement(\"div\")\r\n    const leftText = document.createElement(\"div\")\r\n    const pizzaImage = document.createElement(\"img\")\r\n    const rightText = document.createElement(\"div\")\r\n\r\n\r\n    mainDiv.classList.add(\"main\")\r\n    imgWrapper.classList.add(\"img-wrapper\")\r\n    leftText.classList.add(\"left-text\")\r\n    rightText.classList.add(\"right-text\")\r\n\r\n\r\n    leftText.innerHTML = \"The Best Pizza\"\r\n    rightText.innerHTML = \"In New York!\"\r\n    pizzaImage.src = \"../src/pizza-pic.jpeg\"\r\n\r\n\r\n    imgWrapper.append(leftText,pizzaImage,rightText)\r\n    mainDiv.appendChild(imgWrapper)\r\n    mainContent.appendChild(mainDiv)\r\n\r\n    console.log(\"done\")\r\n\r\n}\n\n//# sourceURL=webpack://restaurant-page/./src/home.js?");
 
 /***/ }),
 
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n\r\n\r\nconst mainContent = document.getElementById(\"content\")\r\nvar page = 12\r\n\r\n\r\nconst home = document.getElementById(\"home-button\")\r\nconst menu = document.getElementById(\"menu-button\")\r\nconst about = document.getElementById(\"about-button\")\r\n\r\n\r\nhome.addEventListener(\"click\", ()=>{\r\n    console.log(\"123\")\r\n    if(page != 1){\r\n        removeAllChildNodes(mainContent)\r\n    }\r\n})\r\n\r\nfunction removeAllChildNodes(nodeList){\r\n    while (nodeList.firstChild){\r\n        nodeList.removeChild(nodeList.firstChild);\r\n    }\r\n}\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n\r\n\r\n\r\nconst mainContent = document.getElementById(\"content\")\r\nvar page = 12\r\n;(0,_home__WEBPACK_IMPORTED_MODULE_0__.createHomeContent)()\r\n;(0,_footer__WEBPACK_IMPORTED_MODULE_1__.createFooter)()\r\n\r\nconst home = document.getElementById(\"home-button\")\r\nconst menu = document.getElementById(\"menu-button\")\r\nconst about = document.getElementById(\"about-button\")\r\n\r\n\r\nhome.addEventListener(\"click\", ()=>{\r\n    console.log(\"123\")\r\n    if(page != 1){\r\n        removeAllChildNodes(mainContent)\r\n        ;(0,_home__WEBPACK_IMPORTED_MODULE_0__.createHomeContent)()\r\n        ;(0,_footer__WEBPACK_IMPORTED_MODULE_1__.createFooter)()\r\n    }\r\n})\r\n\r\nfunction removeAllChildNodes(nodeList){\r\n    while (nodeList.firstChild){\r\n        nodeList.removeChild(nodeList.firstChild);\r\n    }\r\n}\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ })
 
