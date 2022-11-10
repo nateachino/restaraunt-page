@@ -1,6 +1,7 @@
 const mainContent = document.getElementById("content");
 
 export function createMenu() {
+  mainContent.style.height = "150vh";
   const menuWrapper = document.createElement("div");
   const menuHolder = document.createElement("div");
 

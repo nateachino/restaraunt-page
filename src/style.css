@@ -178,3 +178,41 @@ a:hover {
   background-color: white;
   padding: 5px;
 }
+
+/* Contact Page */
+
+.wrap-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.contact {
+  background-color: var(--header-color);
+  padding: 32px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.contact-title {
+  font-size: 32px;
+  margin-bottom: 16px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  font-size: 20px;
+}
+
+.address-wrapper {
+  width: 100px;
+}
