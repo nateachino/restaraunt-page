@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Figerona";
-  src: url(./Figerona-VF.ttf);
+  src: url(./assets/Figerona-VF.ttf);
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Numberlin";
-  src: url(./Numberlin.ttf);
+  src: url(./assets/Numberlin.ttf);
 }
 
 :root {
@@ -156,19 +156,19 @@ a:hover {
 }
 
 .menu-item:nth-child(1) {
-  background-image: url(./Fires.jpg);
+  background-image: url(./assets/Fires.jpg);
 }
 
 .menu-item:nth-child(2) {
-  background-image: url(./chicken.jpg);
+  background-image: url(./assets/chicken.jpg);
 }
 
 .menu-item:nth-child(3) {
-  background-image: url(./burger.jpg);
+  background-image: url(./assets/burger.jpg);
 }
 
 .menu-item:nth-child(4) {
-  background-image: url(./rice.jpg);
+  background-image: url(./assets/rice.jpg);
 }
 
 .item-info {

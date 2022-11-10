@@ -1,7 +1,8 @@
-import { createHomeContent } from "./home";
-import { createFooter } from "./footer";
-import { createMenu } from "./menu";
-import { createContact } from "./contact";
+import { createHomeContent } from "./pages/home";
+import { createFooter } from "./pages/footer";
+import { createMenu } from "./pages/menu";
+import { createContact } from "./pages/contact";
+import "./style.css";
 
 const mainContent = document.getElementById("content");
 var page = 1;
