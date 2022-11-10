@@ -20,7 +20,5 @@ export function createHomeContent() {
   mainDiv.appendChild(imgWrapper);
   mainContent.appendChild(mainDiv);
 
-  mainContent.style.backgroundImage = "./food.gif";
-
-  console.log("done");
+  mainContent.style.backgroundImage = "url('../src/food.gif')";
 }
